@@ -1,0 +1,22 @@
+body{
+    padding: 50px;
+}
+header{
+    text-align: center;
+    font-size: 35px;
+    color:rgb(91, 66, 122);
+    margin-bottom: 50px;
+}
+li{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+a{
+    color:black;
+}
+a:visited{
+    color:rgb(118, 65, 167);
+}
+a:hover{
+    color:blue;
+}
