@@ -12,7 +12,11 @@ h2{
     letter-spacing: 2px;
 }
 .projects{
-    margin-left: 100px;
+    width: 90%;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:10px;
 }
 h6{
     font-size: 20px;
@@ -21,11 +25,5 @@ h6{
     letter-spacing: 2px;
 }
 a{
-    transition: color .3s;
-}
-a:visited{
     color:rgb(118, 65, 167);
-}
-a:hover{
-    color:blue;
 }
