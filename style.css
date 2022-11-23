@@ -1,34 +1,46 @@
-body{
-    padding: 50px;
+body {
+	padding: 50px;
 }
-header{
-    text-align: center;
-    font-size: 35px;
-    color:rgb(91, 66, 122);
-    margin-bottom: 50px;
+header {
+	text-align: center;
+	font-size: 35px;
+	color: rgb(91, 66, 122);
+	margin-bottom: 50px;
 }
-h2{
-    font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: 2px;
+h2 {
+	font-family: Arial, Helvetica, sans-serif;
+	letter-spacing: 2px;
 }
-.projects{
-    width: 90%;
-    margin:0 auto;
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    gap:15px;
+.projects {
+	width: 90%;
+	margin: 0 auto;
 }
-h6{
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: 2px;
+.projects ul {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+	grid-auto-flow: dense;
 }
-a{
-    color:rgb(118, 65, 167);
+a {
+	color: rgb(118, 65, 167);
+	text-transform: capitalize;
+	font-family: "Courier New", Courier, monospace, Arial, Helvetica, sans-serif;
+	font-weight: 500;
+	font-size: 20px;
 }
-@media only screen and (max-width:800px) {
-    .projects{
-        width:95%;
-        grid-template-columns: 1fr;
-    }
+.projects ul li:hover a {
+	color: rgb(42, 7, 77);
+	/* background-color: red; */
+}
+@media only screen and (max-width: 800px) {
+	.projects {
+		width: 95%;
+	}
+	.projects ul {
+		grid-template-columns: 1fr;
+		gap: 15px;
+	}
+	body {
+		padding: 20px 10px 30px;
+	}
 }
